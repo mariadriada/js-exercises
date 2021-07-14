@@ -82,3 +82,28 @@ console.log("exercises/index/js");
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.
  * 
  */
+
+    /*-- Jose Raul
+  4. Escriba un programa que dado un número indique si es par o es impar */
+
+  const isPar = (num) => {
+    if(num % 2 === 0){
+      return 'es par!'
+    } else if( num % 1 === 0){
+      return ' es impar'
+    }
+  }
+
+  console.log(isPar(18))
+
+  /*
+  -- Jose Raul
+  13. Escriba un programa que dado un String indique cuántos caracteres tiene. Ejemplo:
+    “Sebastian” -> 9, “Jimena” -> 6
+  */
+
+  const stringLength = (str) =>{
+    return str.length
+  }
+
+  console.log(stringLength('jimena'))
