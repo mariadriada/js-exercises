@@ -17,8 +17,7 @@ angulos(120);
 angulos(90);
 angulos(180);
 
-let str = ['hola', 'este', 'es', 'arreglo', 'javascript','ohbraveNewworld'];
-let str2 = ['a','bc','def'];
+
 
 function findLongestWord(string){
   //Variable que acumula la palabra más grande
@@ -31,5 +30,7 @@ function findLongestWord(string){
   return myLongestWord;
   }
 
-findLongestWord(str);
-findLongestWord(str2);
+let str = ['hola', 'este', 'es', 'arreglo', 'javascript','ohbraveNewworld'];
+let str2 = ['a','bc','def'];
+console.log(findLongestWord(str));
+console.log(findLongestWord(str2));
