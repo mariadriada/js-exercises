@@ -84,42 +84,64 @@ console.log("exercises/index/js");
  */
 
 
-  /*-- Daniel
-  2. Escribe un programa JavaScript para encontrar el área de un triángulo donde las
-    longitudes de los tres de sus lados son 5, 6, 7*/
+/*-- Daniel
+2. Escribe un programa JavaScript para encontrar el área de un triángulo donde las
+  longitudes de los tres de sus lados son 5, 6, 7*/
 
-    console.log("----------------------AREA DE TRIANGULO-------------------------------")
+  console.log("----------------------AREA DE TRIANGULO-------------------------------")
 
-    function areaTriangulo(l1,l2,l3){
-      let per=l1+l2+l3
-      console.log(`perimetro: ${per}`)
-      let sup=per/2
-      console.log(`Sup-perimetro: ${sup}`)
-      return (sup*(sup-l1)*(sup-l2)*(sup-l3))**(1/2)
+  function areaTriangulo(l1,l2,l3){
+    let per=l1+l2+l3
+    console.log(`perimetro: ${per}`)
+    let sup=per/2
+    console.log(`Sup-perimetro: ${sup}`)
+    return (sup*(sup-l1)*(sup-l2)*(sup-l3))**(1/2)
+  }
+
+  console.log(`El area del triangulo es: ${areaTriangulo(5,6,8)}`)
+  console.log(`El area del triangulo es: ${areaTriangulo(10,3,5)}`)
+
+
+
+/*-- Daniel
+11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
+  la suma está en el rango 50-80, devuelva 65; de lo contrario, devuelve 80 */
+  console.log("----------------------SUMA DE DOS ENTEROS-------------------------------")
+
+  function sumaEnteros(n1,n2){
+    if ((n1+n2)>=50 && (n1+n2)<=80){
+      return 65
+    }else{
+      return 80
     }
+    
+  }
 
-    console.log(`El area del triangulo es: ${areaTriangulo(5,6,8)}`)
-    console.log(`El area del triangulo es: ${areaTriangulo(10,3,5)}`)
+  console.log(sumaEnteros(1,2))
+  console.log(sumaEnteros(50,10))
+  console.log(sumaEnteros(30,30))
 
-    console.log("----------------------SUMA DE DOS ENTEROS-------------------------------")
+/* -- Emily
+  1. Escribe un programa JavaScript para calcular la multiplicación y división de dos
+    números.*/
+    console.log("----------------------MULTIPLICACION Y DIVISION-------------------------------")
 
-    /*-- Daniel
-    11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
-      la suma está en el rango 50-80, devuelva 65; de lo contrario, devuelve 80 */
-
-      function sumaEnteros(n1,n2){
-        if ((n1+n2)>=50 && (n1+n2)<=80){
-          return 65
-        }else{
-          return 80
-        }
-        
+  function multiDiv(num1,num2,op){
+    if (op==="*"){
+      return num1*num2
+    }else if(op==="/"){
+      if(num2===0){
+        return "No puedes dividir por cero cambia el num2"
+      }else{
+        return num1/num2
       }
+    }
+  }
 
-      console.log(sumaEnteros(1,2))
-      console.log(sumaEnteros(50,10))
-      console.log(sumaEnteros(30,30))
+  console.log(multiDiv(3,4,"*"))
+  console.log(multiDiv(3,4,"/"))
+  console.log(multiDiv(3,0,"/"))
 
-
+  
     
       
