@@ -82,3 +82,34 @@ console.log("roberto/index/js");
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.
  * 
  */
+/**
+ * -- Roberto
+  8. Escriba un programa JavaScript para verificar si los valores enteros dados están en
+    el rango 50-99 (inclusive). Devuelve verdadero si uno o más de ellos están en dicho
+    rango
+ */
+    function number_check(x) {
+      //let a=[]
+      for(let i=0 ; i < x.length; i++){
+          if ( (x[i] >= 50) && (x[i] <= 99) ){
+              //a.push(x[i]);
+              //console.log("True")
+              return true
+          }
+          else {
+              //console.log("False")
+              return false
+          }
+          // console.log(a)
+        }
+    }
+    
+    number_check([55,2,3,100]);
+
+/*    -- Roberto
+    17. Escriba un programa JavaScript para intercambiar el primer y último elemento de un
+      arreglo dado de enteros. 
+      */
+
+
+      
