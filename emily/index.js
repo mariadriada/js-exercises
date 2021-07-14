@@ -91,3 +91,16 @@ console.log("emily/index/js");
       let division2=n2/n1
       return(`La multiplicación de estos números es ${multiplication}, la división de ${n1} entre ${n2} es ${division}, y la división de ${n2} entre ${n1} es ${division2}`)
     }
+    // 10. Escriba un programa JavaScript para encontrar el mayor de tres enteros dados
+    // SOLUCION:
+    function name(n1,n2,n3) {
+      if(n1>n2 && n1>n3){
+        return `el mayor de los números es ${n1}`
+      }
+      if(n2>n1 && n2>n3){
+        return `el mayor de los números es ${n2}`
+      }
+      else{
+        return `el mayor de los números es ${n3}`
+      }
+    }
