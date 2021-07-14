@@ -92,16 +92,34 @@ console.log("exercises/index/js");
 
     function areaTriangulo(l1,l2,l3){
       let per=l1+l2+l3
-      console.log(per)
+      console.log(`perimetro: ${per}`)
       let sup=per/2
-      console.log(sup)
+      console.log(`Sup-perimetro: ${sup}`)
       return (sup*(sup-l1)*(sup-l2)*(sup-l3))**(1/2)
     }
 
-    console.log("El area del triangulo es: "+areaTriangulo(5,6,8))
+    console.log(`El area del triangulo es: ${areaTriangulo(5,6,8)}`)
+    console.log(`El area del triangulo es: ${areaTriangulo(10,3,5)}`)
+
+    console.log("----------------------SUMA DE DOS ENTEROS-------------------------------")
 
     /*-- Daniel
     11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
       la suma está en el rango 50-80, devuelva 65; de lo contrario, devuelve 80 */
 
+      function sumaEnteros(n1,n2){
+        if ((n1+n2)>=50 && (n1+n2)<=80){
+          return 65
+        }else{
+          return 80
+        }
+        
+      }
+
+      console.log(sumaEnteros(1,2))
+      console.log(sumaEnteros(50,10))
+      console.log(sumaEnteros(30,30))
+
+
+    
       
