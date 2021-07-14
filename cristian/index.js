@@ -17,4 +17,19 @@ angulos(120);
 angulos(90);
 angulos(180);
 
+let str = ['hola', 'este', 'es', 'arreglo', 'javascript','ohbraveNewworld'];
+let str2 = ['a','bc','def'];
 
+function findLongestWord(string){
+  //Variable que acumula la palabra más grande
+  let myLongestWord = "";
+  for(let i=0;i<string.length;i++){
+    if(string[i].length > myLongestWord.length){
+      myLongestWord = string[i];
+    }
+  }
+  return myLongestWord;
+  }
+
+findLongestWord(str);
+findLongestWord(str2);
