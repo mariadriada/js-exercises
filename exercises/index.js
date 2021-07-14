@@ -107,3 +107,43 @@ console.log("exercises/index/js");
   }
 
   console.log(stringLength('jimena'))
+
+  /*
+    -- Emily
+  1. Escribe un programa JavaScript para calcular la multiplicación y división de dos
+    números.
+  * */
+
+    // const multiplyDivide = (num1, num2) =>{
+
+    // }
+
+    /**
+     2. Escribe un programa JavaScript para encontrar el área de un triángulo donde las
+    longitudes de los tres de sus lados son 5, 6, 7
+     */
+
+    const areaTriangulo = (n1, n2, n3) => {
+      const result = n1 * n2 * n3
+      return `El area del triangulo es ${result}`
+    }
+
+    console.log(areaTriangulo(5,6,7))
+
+    /*
+    -- Jairo
+  5. Escriba un programa JavaScript para verificar dos números dados y devuelve
+    verdadero si uno de los números es 50 o si su suma es 50
+    * */
+
+    const verificar = (n1, n2) => {
+      if(n1 === 50 || n2 === 50){ 
+        return true
+      } else if(n1 + n2 === 50){ 
+        return true
+      } else {
+        return false
+      }
+    }
+
+    console.log(verificar(50,25))
