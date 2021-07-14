@@ -1,4 +1,4 @@
-console.log("daniel/index/js");
+console.log("exercises/index/js");
 
 /**
  * EJERCICIOS JS
@@ -82,3 +82,26 @@ console.log("daniel/index/js");
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.
  * 
  */
+
+
+  /*-- Daniel
+  2. Escribe un programa JavaScript para encontrar el área de un triángulo donde las
+    longitudes de los tres de sus lados son 5, 6, 7*/
+
+    console.log("----------------------AREA DE TRIANGULO-------------------------------")
+
+    function areaTriangulo(l1,l2,l3){
+      let per=l1+l2+l3
+      console.log(per)
+      let sup=per/2
+      console.log(sup)
+      return (sup*(sup-l1)*(sup-l2)*(sup-l3))**(1/2)
+    }
+
+    console.log("El area del triangulo es: "+areaTriangulo(5,6,8))
+
+    /*-- Daniel
+    11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
+      la suma está en el rango 50-80, devuelva 65; de lo contrario, devuelve 80 */
+
+      
