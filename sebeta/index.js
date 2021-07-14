@@ -84,6 +84,21 @@ console.log("sebeta/index.js");
  */
 
 // -- Sebastian
+// 6. Escriba un programa JavaScript para verificar si un número entero está entre 20 y 100
+
+const numberBetween = (num, initialLimit, finalLimit ) => {
+  if (num <= finalLimit && num >= initialLimit) {
+    console.log(`${num} is between ${initialLimit} and ${finalLimit}`)
+  } else {
+    console.log(`${num} is not between ${initialLimit} and ${finalLimit}`)
+  }
+
+}
+
+numberBetween(45, 20, 100)
+numberBetween(5, 20, 100)
+
+// -- Sebastian
 // 15. Escriba un programa JavaScript para comprobar si aparece el número 1 en la
 //   primera o última posición de un arreglo dado de números enteros. La longitud del
 //   arreglo debe ser mayor o igual a 1
