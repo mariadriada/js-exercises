@@ -142,6 +142,18 @@ console.log("exercises/index/js");
   console.log(multiDiv(3,4,"/"))
   console.log(multiDiv(3,0,"/"))
 
+  /* -- Laura
+  3. Escriba un programa JavaScript para determinar si un año determinado es bisiesto
+    en el calendario gregoriano*/
+
+    console.log("----------------------AÑO BISIESTO-------------------------------")
+
+    function esBisiesto(anhio){
+      return anhio % 100 === 0 ? anhio % 400 === 0 : anhio % 4 === 0;
+    }
+
+    console.log(`El año 2020 es Bisiesto ? ${esBisiesto(2020)}`)
+
   
     
       
