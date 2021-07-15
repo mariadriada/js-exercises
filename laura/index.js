@@ -2,7 +2,7 @@ console.log("laura/index/js");
 
 /**
  * EJERCICIOS JS
-
+ * 
  
   -- Emily
   1. Escribe un programa JavaScript para calcular la multiplicación y división de dos
@@ -80,9 +80,8 @@ console.log("laura/index/js");
   -- Cristian
   19. Escriba un JavaScript para encontrar el String más largo de un arreglo de Strings.
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.
-    */
- 
- 
+ * 
+ */
 
 
 
@@ -90,21 +89,28 @@ console.log("laura/index/js");
   3. Escriba un programa JavaScript para determinar si un año determinado es bisiesto
     en el calendario gregoriano*/
 
-   const isAnoBisiesto=(year)=>{
-     if (year%4===0){
-       if (year%100===0){
-         if (year%400===0){
-           return console.log(`Es una año Bisiesto en el calendario Gregoriano`)
-         }
-         else{
-          return   console.log(`No es una año Bisiesto en el calendario Gregoriano`)  
-         }
-       }else{
-         return console.log(`Es una año Bisiesto en el calendario Gregoriano`)
-       }
-     }
-     else{
-          return console.log(`No es una año Bisiesto en el calendario Gregoriano`)  
-     }
-   }
-   isAnoBisiesto(2024)
+
+  /* Laura
+  12. Escriba un programa JavaScript para poner en mayúscula la primera letra de una
+    palabra de un String determinada.*/
+
+    /*Laura
+  12. Escriba un programa JavaScript para poner en mayúscula la primera letra de una
+    palabra de un String determinada.*/
+
+
+    function ponerMayuscula(string){
+      return string[0].toUpperCase()+string.slice(1);
+ }
+console.log(ponerMayuscula(`mayuscula`));
+
+
+ 
+
+
+
+    
+
+
+
+
