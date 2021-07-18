@@ -68,6 +68,19 @@ console.log("exercises/index/js");
   /*-- Jairo
   5. Escriba un programa JavaScript para verificar dos números dados y devuelve
     verdadero si uno de los números es 50 o si su suma es 50*/
+    console.log("-----------------------ES 50 o suma 50--------------------------")
+
+    function sumaCincuenta(num1, num2){
+      if(num1 + num2 === 50 ||  num1 === 50 || num2 ===50){
+        return true
+      }
+      return false
+    }
+    console.log(sumaCincuenta(25, 25))
+    console.log(sumaCincuenta(50, 25))
+    console.log(sumaCincuenta(25, 50))
+    console.log(sumaCincuenta(0, 25))
+
 
   /*-- Sebastian
   6. Escriba un programa JavaScript para verificar si un número entero está entre 20 y
