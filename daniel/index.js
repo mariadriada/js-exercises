@@ -68,7 +68,7 @@ console.log("exercises/index/js");
   /*-- Jairo
   5. Escriba un programa JavaScript para verificar dos números dados y devuelve
     verdadero si uno de los números es 50 o si su suma es 50*/
-    console.log("-----------------------ES 50 o suma 50--------------------------")
+    console.log("-----------------------ES 50 O SUMA 50--------------------------")
 
     function sumaCincuenta(num1, num2){
       if(num1 + num2 === 50 ||  num1 === 50 || num2 ===50){
@@ -85,15 +85,55 @@ console.log("exercises/index/js");
   /*-- Sebastian
   6. Escriba un programa JavaScript para verificar si un número entero está entre 20 y
     100*/
+    console.log("-----------------------ENTRE 20 y 100--------------------------")
+
+    function entre20y100(num){
+      return num>=20 && num<=100 ? `El numero ${num} es mayor a 20 y menor que 100`:"Numero  fuera de rango"
+    }
+    console.log(entre20y100(10))
+    console.log(entre20y100(20))
+    console.log(entre20y100(50))
+    console.log(entre20y100(101))
 
   /*-- Juan Manuel
   7. Escriba un programa JavaScript para verificar si un número positivo dado es un
     múltiplo de 3 o un múltiplo de 7*/
+    console.log("-----------------------MULTPLO DE 3 O DE 7--------------------------")
+
+    function multiploDe3Y7(num){
+      if(num % 3 === 0 && num % 7 === 0) {
+        return `El numero ${num} es multiplo de 3 y de 7`
+      }else if(num % 7 === 0){
+        return `El numero ${num} es multiplo de 7`
+      }else if(num % 3 === 0) {
+        return `El numero ${num} es multiplo de 3`
+      }
+    }
+    console.log(multiploDe3Y7(21))
+    console.log(multiploDe3Y7(27))
+    console.log(multiploDe3Y7(42))
+    console.log(multiploDe3Y7(33))
+    console.log(multiploDe3Y7(7))
 
   /*-- Roberto
   8. Escriba un programa JavaScript para verificar si los valores enteros dados están en
     el rango 50-99 (inclusive). Devuelve verdadero si uno o más de ellos están en dicho
     rango*/
+
+    let arr=[100, 22, 65, 44, 55, 101, 23, 87]
+
+    function rango(arr){
+      let boolArr = []
+      for (let i = 0;i < arr.length; i++){
+        if(arr[i] >= 50 && arr[i] <= 99){
+          boolArr[i] = true
+        }else 
+          boolArr[i]=false
+      }
+      return boolArr
+    }
+
+  console.log(rango(arr))
 
   /*-- Cristian
   9. Escribe un programa JavaScript que dado un número (Que representa grados) diga
@@ -102,7 +142,7 @@ console.log("exercises/index/js");
     ○ Ángulo agudo: ángulo entre 0 y 90 grados.
     ○ Ángulo recto: un ángulo de 90 grados.
     ○ Ángulo obtuso: ángulo entre 90 y 180 grados.
-    ○ Ángulo recto: un ángulo de 180 grados.*/
+    ○ Ángulo llano: un ángulo de 180 grados.*/
 
   
   /*-- Emily
