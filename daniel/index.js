@@ -120,6 +120,7 @@ console.log("exercises/index/js");
     el rango 50-99 (inclusive). Devuelve verdadero si uno o más de ellos están en dicho
     rango*/
 
+    console.log("-----------------------NUMEROS ENTRE 50 Y 99--------------------------")
     let arr=[100, 22, 65, 44, 55, 101, 23, 87]
 
     function rango(arr){
@@ -143,10 +144,38 @@ console.log("exercises/index/js");
     ○ Ángulo recto: un ángulo de 90 grados.
     ○ Ángulo obtuso: ángulo entre 90 y 180 grados.
     ○ Ángulo llano: un ángulo de 180 grados.*/
+    console.log("-----------------------DETERMINA EL ANGULO--------------------------")
+    function tipoAngulo(ang){
+      if (ang<90){
+        return `El angulo ${ang} es agudo`
+      }else if (ang===90){
+        return `El angulo ${ang} es recto`
+      }else if (ang>90 && ang<180){
+        return `El angulo ${ang} es obtuso`
+      }else if (ang===180){
+        return `El angulo ${ang} es llano`
+      }
+    }
 
-  
+    console.log(tipoAngulo(18))
+    console.log(tipoAngulo(95))
+    console.log(tipoAngulo(90))
+    console.log(tipoAngulo(180))
   /*-- Emily
   10. Escriba un programa JavaScript para encontrar el mayor de tres enteros dados*/
+  console.log("-----------------------EL MAYOR DE 3--------------------------")
+    function mayor(num1,num2,num3){
+      if (num1>num2 && num1>num3){
+        return `El numero ${num1} es el mayor de los tres`
+      }else if(num2>num1 && num2>num3){
+        return `El numero ${num2} es el mayor de los tres`
+      }else{
+        return `El numero ${num3} es el mayor de los tres`
+      }
+    }
+    console.log(mayor(5,2,3))
+    console.log(mayor(20,2,1))
+    console.log(mayor(1,8,2))
 
   /*-- Daniel
   11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
@@ -167,10 +196,25 @@ console.log("exercises/index/js");
   /*-- Laura
   12. Escriba un programa JavaScript para poner en mayúscula la primera letra de una
     palabra de un String determinada*/
-
+    console.log("----------------------PPRIMERA LETRA EN MAYUSCULA-----------------------------")
+    function mayuscula(str){
+      let arrStr=str.split(" ")
+      for (let i = 0;i < arrStr.length; i++){
+        arrStr[i]=arrStr[i].replace(arrStr[i][0], arrStr[i][0].toUpperCase())
+      }
+      return arrStr.join(" ")
+    }
+    console.log(mayuscula("hola mundo"))
   /*-- Jose Raul
   13. Escriba un programa que dado un String indique cuántos caracteres tiene. Ejemplo:
     “Sebastian” -> 9, “Jimena” -> 6*/
+    console.log("----------------------CONTAR CARACTERES DE UN STRING-----------------------------")
+    function contarCaracteres(str){
+      return str.length
+    }
+    console.log(contarCaracteres("Sebastian"))
+    console.log(contarCaracteres("Jimena"))
+    console.log(contarCaracteres("Daniel"))
 
   /*-- Jairo
   14. Escriba un programa JavaScript para convertir un número determinado en horas.
