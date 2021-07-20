@@ -287,15 +287,14 @@ console.log("exercises/index/js");
   19. Escriba un JavaScript para encontrar el String más largo de un arreglo de Strings.
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.*/
     console.log("----------------------EL STRING MAS LARGO---------------------------")
-
     function strinMasLargo(arrStr){
-       let arrLength=[]
-      for(let i=0;i<arrStr.length;i++){
-        arrLength[i]=arrStr[i].length
-        /*for(let j=0;j<arrStr[i].length;j++){
-          arrLength[i]=arrLength[i].length
-        }*/
-      }
+      let palabra=""
+     for(let i=0;i<arrStr.length;i++){
+       if(arrStr[i].length > palabra.length){
+        palabra = arrStr[i]
+       }
+     }
+     return palabra
     }
-    let arrStr=["a","bc","def"]
-    console.log(strinMasLargo(arrStr))
+   let arrStr=["a","bc","def"]
+   console.log(strinMasLargo(arrStr))
