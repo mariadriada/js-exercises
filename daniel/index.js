@@ -200,7 +200,9 @@ console.log("exercises/index/js");
     function mayuscula(str){
       let arrStr=str.split(" ")
       for (let i = 0;i < arrStr.length; i++){
-        arrStr[i]=arrStr[i].replace(arrStr[i][0], arrStr[i][0].toUpperCase())
+        let palabra=arrStr[i]
+        palabra=palabra.replace(palabra[0], palabra[0].toUpperCase())
+        arrStr[i]=palabra
       }
       return arrStr.join(" ")
     }
@@ -219,19 +221,81 @@ console.log("exercises/index/js");
   /*-- Jairo
   14. Escriba un programa JavaScript para convertir un número determinado en horas.
     Por ejemplo: 120 serían 2 horas*/
+    console.log("----------------------DE MINUTOS A HORAS-----------------------------")
+  function minHoras(min){
+    let horas=min/60
+    return `${min} minutos son ${horas} horas`
+  }
+  console.log(minHoras(120))
+  console.log(minHoras(60))
+  console.log(minHoras(30))
 
   /*-- Sebastian
   15. Escriba un programa JavaScript para comprobar si aparece el número 1 en la
     primera o última posición de un arreglo dado de números enteros. La longitud del
     arreglo debe ser mayor o igual a 1*/
 
+  console.log("----------------------EL 1 AL PRINCIPIO O AL FINAL-----------------------------")
+  
+  function buscarUno(array){
+    let final=array.length-1
+    if(array[0]===1 && array[final]===1){
+      return "El numero 1 esta en la posicion 0 y en la posicion "+final+" del arreglo"
+    }else if(array[0]===1){
+      return `El numero 1 esta en la posicion 0 del arreglo`
+    }else if(array[final]===1){
+      return "El numero 1 en la posicion "+final+" del arreglo"
+    }
+  }
+  let arr0=[1, 2, 3, 4, 1]
+  let arr1=[1, 2, 3, 4]
+  let arr2=[2, 3, 4, 5, 6, 1]
+
+  console.log(buscarUno(arr0))
+  console.log(buscarUno(arr1))
+  console.log(buscarUno(arr2))
+
   /*-- Juan Manuel
   16. Escriba un programa que calcule el promedio de los números de un arreglo*/
+  console.log("----------------------PROMEDIO-----------------------------")
+    function promedio(arrProm){
+      let sum=0
+      for(let i=0;i<arrProm.length;i++){
+        sum=sum+arrProm[i]
+      }
+      return sum/(arrProm.length)
+    }
+    console.log(promedio(arr1))
 
   /*-- Roberto
   17. Escriba un programa JavaScript para intercambiar el primer y último elemento de un
     arreglo dado de enteros.*/
+    console.log("----------------------INTERCAMBIO PRIMERO Y ULTIMO---------------------------")
+
+    function intercambio(arrInt){
+      let tem=arrInt[arrInt.length-1]
+      let temp=arrInt[0]
+      arrInt[0]=tem
+      arrInt[arrInt.length-1]=temp
+      return arrInt
+    } 
+    arr1=[1, 2, 3, 4]
+    console.log(intercambio(arr1))
+    
 
   /*-- Cristian
   19. Escriba un JavaScript para encontrar el String más largo de un arreglo de Strings.
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.*/
+    console.log("----------------------EL STRING MAS LARGO---------------------------")
+
+    function strinMasLargo(arrStr){
+       let arrLength=[]
+      for(let i=0;i<arrStr.length;i++){
+        arrLength[i]=arrStr[i].length
+        /*for(let j=0;j<arrStr[i].length;j++){
+          arrLength[i]=arrLength[i].length
+        }*/
+      }
+    }
+    let arrStr=["a","bc","def"]
+    console.log(strinMasLargo(arrStr))
