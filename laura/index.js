@@ -7,10 +7,6 @@ console.log("laura/index/js");
   2. Escribe un programa JavaScript para encontrar el área de un triángulo donde las
     longitudes de los tres de sus lados son 5, 6, 7
 
-  -- Sebastian
-  6. Escriba un programa JavaScript para verificar si un número entero está entre 20 y
-    100
-
   -- Juan Manuel
   7. Escriba un programa JavaScript para verificar si un número positivo dado es un
     múltiplo de 3 o un múltiplo de 7
@@ -104,7 +100,7 @@ console.log(ponerMayuscula(`mayuscula`))
 
 
 
-     /* -- Jose Raul
+/* -- Jose Raul
    Escriba un programa que dado un número indique si es par o es impar*/
 
   function tipoNumero(num){
@@ -135,9 +131,9 @@ console.log(ponerMayuscula(`mayuscula`))
       console.log(operaciones(6,12))
 
 
-      /*Jairo
-       Escriba un programa JavaScript para verificar dos números dados y devuelve
-        verdadero si uno de los números es 50 o si su suma es 50*/
+  /*Jairo
+    Escriba un programa JavaScript para verificar dos números dados y devuelve
+    verdadero si uno de los números es 50 o si su suma es 50*/
 
 const sumaNum=(n1,n2)=>{
   if (n1===50 || n2===50 || n1+n2===50){
@@ -148,6 +144,23 @@ const sumaNum=(n1,n2)=>{
   }
 }
   console.log(sumaNum(40,10))
+  
+
+  /* Sebastian
+  6. Escriba un programa JavaScript para verificar si un número entero está entre 20 y
+    100*/
+
+const numEntero=(num)=>{
+  if (num >20 && num < 100){
+    return(`Este numero esta entre 20 y 100`)
+  }
+  else{
+    return(`Este numero NO esta entre 20 y 100`)
+  }
+  }
+  let numero=11;
+  console.log(numEntero(numero))
+  
   
 
  
