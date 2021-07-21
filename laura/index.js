@@ -2,24 +2,10 @@ console.log("laura/index/js");
 
 /**
  * EJERCICIOS JS
- * 
  
-  -- Emily
-  1. Escribe un programa JavaScript para calcular la multiplicación y división de dos
-    números.
-
   -- Daniel
   2. Escribe un programa JavaScript para encontrar el área de un triángulo donde las
     longitudes de los tres de sus lados son 5, 6, 7
-
-  -- Laura
-  3. Escriba un programa JavaScript para determinar si un año determinado es bisiesto
-    en el calendario gregoriano
-
-  
-  -- Jairo
-  5. Escriba un programa JavaScript para verificar dos números dados y devuelve
-    verdadero si uno de los números es 50 o si su suma es 50
 
   -- Sebastian
   6. Escriba un programa JavaScript para verificar si un número entero está entre 20 y
@@ -51,9 +37,7 @@ console.log("laura/index/js");
   11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
     la suma está en el rango 50-80, devuelva 65; de lo contrario, devuelve 80
 
-  -- Laura
-  12. Escriba un programa JavaScript para poner en mayúscula la primera letra de una
-    palabra de un String determinada
+
 
   -- Jose Raul
   13. Escriba un programa que dado un String indique cuántos caracteres tiene. Ejemplo:
@@ -80,6 +64,8 @@ console.log("laura/index/js");
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.
  * 
  */
+
+
 
     
  /*Laura
@@ -149,7 +135,20 @@ console.log(ponerMayuscula(`mayuscula`))
       console.log(operaciones(6,12))
 
 
+      /*Jairo
+       Escriba un programa JavaScript para verificar dos números dados y devuelve
+        verdadero si uno de los números es 50 o si su suma es 50*/
 
+const sumaNum=(n1,n2)=>{
+  if (n1===50 || n2===50 || n1+n2===50){
+    return true
+  }
+  else{
+    return false
+  }
+}
+  console.log(sumaNum(40,10))
+  
 
  
 
