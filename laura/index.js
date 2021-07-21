@@ -133,7 +133,20 @@ console.log(ponerMayuscula(`mayuscula`))
   tipoNumero(234)
   
 
+/*. Escribe un programa JavaScript para calcular la multiplicación y división de dos
+    números.*/
 
+    function operaciones(vl1,vl2){
+      let multiplicacion=vl1*vl2
+      
+      let division1=vl1/vl2
+      
+      let division=vl2/vl1
+      
+      return (`El resultado de la multiplicacion es ${multiplicacion},la division de ${vl1} y ${vl2} es ${division1} y de la division de ${vl2} y ${vl1} es ${division}`)
+       
+      }
+      console.log(operaciones(6,12))
 
 
 
