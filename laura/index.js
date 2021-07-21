@@ -162,9 +162,10 @@ const numEntero=(num)=>{
 
 
     function caracteres(string){
-      for (i=0;i<string.length;i++){
-        return ( "El numero de letras de esta palabra es " + string.length)
-      }
+     
+      string=string.length
+        return ( "El numero de letras de esta palabra es " + string)
+      
     }
 console.log(caracteres("laila"))
   
