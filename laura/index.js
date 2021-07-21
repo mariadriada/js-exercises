@@ -16,9 +16,7 @@ console.log("laura/index/js");
   3. Escriba un programa JavaScript para determinar si un año determinado es bisiesto
     en el calendario gregoriano
 
-  -- Jose Raul
-  4. Escriba un programa que dado un número indique si es par o es impar
-
+  
   -- Jairo
   5. Escriba un programa JavaScript para verificar dos números dados y devuelve
     verdadero si uno de los números es 50 o si su suma es 50
@@ -83,18 +81,32 @@ console.log("laura/index/js");
  * 
  */
 
-
-
-    /*Laura
+    
+ /*Laura
   3. Escriba un programa JavaScript para determinar si un año determinado es bisiesto
     en el calendario gregoriano*/
 
+    const isAnoBisiesto=(year)=>{
+      if (year%4===0){
+        if (year%100===0){
+          if (year%400===0){
+            return console.log(`Es una año Bisiesto en el calendario Gregoriano`)
+          }
+          else{
+           return   console.log(`No es una año Bisiesto en el calendario Gregoriano`)  
+          }
+        }else{
+          return console.log(`Es una año Bisiesto en el calendario Gregoriano`)
+        }
+      }
+      else{
+           return console.log(`No es una año Bisiesto en el calendario Gregoriano`)  
+      }
+    }
+    isAnoBisiesto(2024)
 
-  /* Laura
-  12. Escriba un programa JavaScript para poner en mayúscula la primera letra de una
-    palabra de un String determinada.*/
 
-    /*Laura
+ /*Laura
   12. Escriba un programa JavaScript para poner en mayúscula la primera letra de una
     palabra de un String determinada.*/
 
@@ -102,7 +114,28 @@ console.log("laura/index/js");
     function ponerMayuscula(string){
       return string[0].toUpperCase()+string.slice(1);
  }
-console.log(ponerMayuscula(`mayuscula`));
+console.log(ponerMayuscula(`mayuscula`))
+
+
+
+     /* -- Jose Raul
+   Escriba un programa que dado un número indique si es par o es impar*/
+
+  function tipoNumero(num){
+    if (num%2==0 ){
+      console.log(`El numero es par`)
+    }
+    else{
+      console.log(`El numero indicado es impar`)
+    }
+  }
+  
+  tipoNumero(234)
+  
+
+
+
+
 
 
  
