@@ -33,11 +33,7 @@ console.log("laura/index/js");
   11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
     la suma está en el rango 50-80, devuelva 65; de lo contrario, devuelve 80
 
-
-
-  -- Jose Raul
-  13. Escriba un programa que dado un String indique cuántos caracteres tiene. Ejemplo:
-    “Sebastian” -> 9, “Jimena” -> 6
+  
 
   -- Jairo
   14. Escriba un programa JavaScript para convertir un número determinado en horas.
@@ -48,9 +44,7 @@ console.log("laura/index/js");
     primera o última posición de un arreglo dado de números enteros. La longitud del
     arreglo debe ser mayor o igual a 1
 
-  -- Juan Manuel
-  16. Escriba un programa que calcule el promedio de los números de un arreglo
-
+  
   -- Roberto
   17. Escriba un programa JavaScript para intercambiar el primer y último elemento de un
     arreglo dado de enteros.
@@ -161,14 +155,37 @@ const numEntero=(num)=>{
   let numero=11;
   console.log(numEntero(numero))
   
+
+  /* Jose Raul
+  13. Escriba un programa que dado un String indique cuántos caracteres tiene. Ejemplo:
+    “Sebastian” -> 9, “Jimena” -> 6*/
+
+
+    function caracteres(string){
+      for (i=0;i<string.length;i++){
+        return ( "El numero de letras de esta palabra es " + string.length)
+      }
+    }
+console.log(caracteres("laila"))
   
 
  
+/*Juan Manuel
+  16. Escriba un programa que calcule el promedio de los números de un arreglo*/
 
 
-
-    
-
-
+function promedio(arreglo){
+  let suma=0;
+  let prom=0;
+  
+  for(i=0;i<arreglo.length;i++){
+    suma+=arreglo[i] 
+  }
+  prom=suma/arreglo.length
+  console.log(`El promedio de la suma de los numeros es ${prom}`)
+    }
+  var numeros=[2,12];
+  promedio(numeros)
+  
 
 
