@@ -20,7 +20,18 @@ console.log("esteban/index/js");
 /*  -- Daniel
   2. Escribe un programa JavaScript para encontrar el área de un triángulo donde las
     longitudes de los tres de sus lados son 5, 6, 7
+*/
 
+function areaTriangulo(a,b,c){
+   let sp=(a+b+c)/2;
+   let area=Math.sqrt(sp*(sp-a)*(sp-b)*(sp-c));
+   console.log(area);
+  return area;
+}
+
+areaTriangulo(4,5,6);
+
+/*
   -- Laura
   3. Escriba un programa JavaScript para determinar si un año determinado es bisiesto
     en el calendario gregoriano
@@ -60,20 +71,20 @@ console.log("esteban/index/js");
 */
 
 
-function mayor(int1,int2,int3){
-    int1=parseInt(int1);
-    int2=parseInt(int2);
-    int3=parseInt(int3);
-    if((int1>int2)&&(int1>int3)){
-      console.log(`el mayor es ${int1}`);
-    }else if ((int2>int1)&&(int2>int3)){
-      console.log(`el mayor es ${int2}`);
-    }else{
-      console.log(`el mayor es ${int3}`);
-    }
+// function mayor(int1,int2,int3){
+//     int1=parseInt(int1);
+//     int2=parseInt(int2);
+//     int3=parseInt(int3);
+//     if((int1>int2)&&(int1>int3)){
+//       console.log(`el mayor es ${int1}`);
+//     }else if ((int2>int1)&&(int2>int3)){
+//       console.log(`el mayor es ${int2}`);
+//     }else{
+//       console.log(`el mayor es ${int3}`);
+//     }
     
-}
-mayor(100,67,9);
+// }
+// mayor(100,67,9);
 /*
   -- Daniel
   11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
