@@ -22,14 +22,14 @@ console.log("esteban/index/js");
     longitudes de los tres de sus lados son 5, 6, 7
 */
 
-function areaTriangulo(a,b,c){
-   let sp=(a+b+c)/2;
-   let area=Math.sqrt(sp*(sp-a)*(sp-b)*(sp-c));
-   console.log(area);
-  return area;
-}
+// function areaTriangulo(a,b,c){
+//    let sp=(a+b+c)/2;
+//    let area=Math.sqrt(sp*(sp-a)*(sp-b)*(sp-c));
+//    console.log(area);
+//   return area;
+// }
 
-areaTriangulo(4,5,6);
+// areaTriangulo(4,5,6);
 
 /*
   -- Laura
@@ -90,6 +90,23 @@ areaTriangulo(4,5,6);
   11. Escriba un programa JavaScript para calcular la suma de los dos enteros dados. Si
     la suma está en el rango 50-80, devuelva 65; de lo contrario, devuelve 80
 
+    */
+    // function suma(int1,int2){
+    //    int1=parseInt(int1);
+    //    int2=parseInt(int2);
+    //    sum=int1+int2;
+    //   if (sum >= 50 && sum <= 80) {
+    //     console.log(65);
+    //     return 65;
+    //   }
+    //   console.log(80);
+    //   return 80;
+    // }
+
+    // suma(50,5);
+
+
+    /*
   -- Laura
   12. Escriba un programa JavaScript para poner en mayúscula la primera letra de una
     palabra de un String determinada
