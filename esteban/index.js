@@ -36,6 +36,18 @@ console.log("esteban/index/js");
   3. Escriba un programa JavaScript para determinar si un año determinado es bisiesto
     en el calendario gregoriano
 
+*/
+
+function bisiesto(anio){
+    if (anio % 4 === 0) {
+      console.log("bisiesto")
+      return "año bisiesto"
+    }
+    console.log("no bisiesto")
+     return "no es bisiesto"
+}
+bisiesto(205);
+/*
   -- Jose Raul
   4. Escriba un programa que dado un número indique si es par o es impar
 
