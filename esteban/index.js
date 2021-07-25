@@ -52,10 +52,10 @@ console.log("esteban/index/js");
   4. Escriba un programa que dado un número indique si es par o es impar
 
 */
-function parImpar(num){
-  num%2===0 ?  console.log(`${num} es par`) :  console.log(`${num} es impar`);
-} 
-parImpar(14);
+// function parImpar(num){
+//   num%2===0 ?  console.log(`${num} es par`) :  console.log(`${num} es impar`);
+// } 
+// parImpar(14);
 
 /*
 
@@ -150,11 +150,17 @@ parImpar(14);
     // upperCa("gabriel");
     /*
 
-
   -- Jose Raul
   13. Escriba un programa que dado un String indique cuántos caracteres tiene. Ejemplo:
     “Sebastian” -> 9, “Jimena” -> 6
+*/
 
+function cuantosCarateres(str){
+  let total=str.length;
+  console.log(`"${str}" -> ${total}`);
+}
+cuantosCarateres("Jimena");
+/*
   -- Jairo
   14. Escriba un programa JavaScript para convertir un número determinado en horas.
     Por ejemplo: 120 serían 2 horas
