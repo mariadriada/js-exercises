@@ -51,6 +51,14 @@ console.log("esteban/index/js");
   -- Jose Raul
   4. Escriba un programa que dado un número indique si es par o es impar
 
+*/
+function parImpar(num){
+  num%2===0 ?  console.log(`${num} es par`) :  console.log(`${num} es impar`);
+} 
+parImpar(14);
+
+/*
+
   -- Jairo
   5. Escriba un programa JavaScript para verificar dos números dados y devuelve
     verdadero si uno de los números es 50 o si su suma es 50
@@ -124,23 +132,25 @@ console.log("esteban/index/js");
     palabra de un String determinada
 
     */
-    function upperCa(str){
-      let nuevo=str.split(" ");
-      let otro=[];
-      let res=[];
-      let sum=[];
-      for (let i = 0; i < nuevo.length; i++) {
-        otro=nuevo[i].slice(1, nuevo[i].length+1);
-        let  mayu=nuevo[i][0];
-        let up=mayu.toUpperCase(); 
-        res= up.concat(otro);
-        sum+=res;
-      }
-        console.log(sum);
-    }
+    // function upperCa(str){
+    //   let nuevo=str.split(" ");
+    //   let otro=[];
+    //   let res=[];
+    //   let sum=[];
+    //   for (let i = 0; i < nuevo.length; i++) {
+    //     otro=nuevo[i].slice(1, nuevo[i].length+1);
+    //     let  mayu=nuevo[i][0];
+    //     let up=mayu.toUpperCase(); 
+    //     res= up.concat(otro);
+    //     sum+=res;
+    //   }
+    //     console.log(sum);
+    // }
     
-    upperCa("gabriel");
+    // upperCa("gabriel");
     /*
+
+
   -- Jose Raul
   13. Escriba un programa que dado un String indique cuántos caracteres tiene. Ejemplo:
     “Sebastian” -> 9, “Jimena” -> 6
