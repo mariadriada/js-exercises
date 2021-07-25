@@ -38,15 +38,15 @@ console.log("esteban/index/js");
 
 */
 
-function bisiesto(anio){
-    if (anio % 4 === 0) {
-      console.log("bisiesto")
-      return "año bisiesto"
-    }
-    console.log("no bisiesto")
-     return "no es bisiesto"
-}
-bisiesto(205);
+// function bisiesto(anio){
+//     if (anio % 4 === 0) {
+//       console.log("bisiesto")
+//       return "año bisiesto"
+//     }
+//     console.log("no bisiesto")
+//      return "no es bisiesto"
+// }
+// bisiesto(205);
 /*
   -- Jose Raul
   4. Escriba un programa que dado un número indique si es par o es impar
@@ -123,6 +123,24 @@ bisiesto(205);
   12. Escriba un programa JavaScript para poner en mayúscula la primera letra de una
     palabra de un String determinada
 
+    */
+    function upperCa(str){
+      let nuevo=str.split(" ");
+      let otro=[];
+      let res=[];
+      let sum=[];
+      for (let i = 0; i < nuevo.length; i++) {
+        otro=nuevo[i].slice(1, nuevo[i].length+1);
+        let  mayu=nuevo[i][0];
+        let up=mayu.toUpperCase(); 
+        res= up.concat(otro);
+        sum+=res;
+      }
+        console.log(sum);
+    }
+    
+    upperCa("gabriel");
+    /*
   -- Jose Raul
   13. Escriba un programa que dado un String indique cuántos caracteres tiene. Ejemplo:
     “Sebastian” -> 9, “Jimena” -> 6
