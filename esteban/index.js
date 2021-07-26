@@ -64,18 +64,30 @@ console.log("esteban/index/js");
     verdadero si uno de los números es 50 o si su suma es 50
 
     */
-    function dosNumeros(num1, num2){
-      if(num1===50 || num2===50 || num1+num2===50){
-        return true;
-      }
-    }
-    dosNumeros(40,10);
+    // function dosNumeros(num1, num2){
+    //   if(num1===50 || num2===50 || num1+num2===50){
+    //     return true;
+    //   }
+    // }
+    // dosNumeros(40,10);
 
 
     /*
   -- Sebastian
   6. Escriba un programa JavaScript para verificar si un número entero está entre 20 y
     100
+
+    */
+    function rangoEntero(num){
+      num=parseInt(num);
+      if (num>=20 && num<=100) {
+        console.log("esta entre 20 y 100");
+        return "esta entre 20 y 100";
+      }
+    }
+    rangoEntero(100);
+
+    /*
 
   -- Juan Manuel
   7. Escriba un programa JavaScript para verificar si un número positivo dado es un
