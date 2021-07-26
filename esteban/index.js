@@ -63,6 +63,16 @@ console.log("esteban/index/js");
   5. Escriba un programa JavaScript para verificar dos números dados y devuelve
     verdadero si uno de los números es 50 o si su suma es 50
 
+    */
+    function dosNumeros(num1, num2){
+      if(num1===50 || num2===50 || num1+num2===50){
+        return true;
+      }
+    }
+    dosNumeros(40,10);
+
+
+    /*
   -- Sebastian
   6. Escriba un programa JavaScript para verificar si un número entero está entre 20 y
     100
@@ -155,11 +165,11 @@ console.log("esteban/index/js");
     “Sebastian” -> 9, “Jimena” -> 6
 */
 
-function cuantosCarateres(str){
-  let total=str.length;
-  console.log(`"${str}" -> ${total}`);
-}
-cuantosCarateres("Jimena");
+// function cuantosCarateres(str){
+//   let total=str.length;
+//   console.log(`"${str}" -> ${total}`);
+// }
+// cuantosCarateres("Jimena");
 /*
   -- Jairo
   14. Escriba un programa JavaScript para convertir un número determinado en horas.
