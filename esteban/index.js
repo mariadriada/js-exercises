@@ -78,21 +78,38 @@ console.log("esteban/index/js");
     100
 
     */
-    function rangoEntero(num){
-      num=parseInt(num);
-      if (num>=20 && num<=100) {
-        console.log("esta entre 20 y 100");
-        return "esta entre 20 y 100";
-      }
-    }
-    rangoEntero(100);
+    // function rangoEntero(num){
+    //   num=parseInt(num);
+    //   if (num>=20 && num<=100) {
+    //     console.log("esta entre 20 y 100");
+    //     return "esta entre 20 y 100";
+    //   }
+    // }
+    // rangoEntero(100);
 
     /*
 
   -- Juan Manuel
   7. Escriba un programa JavaScript para verificar si un número positivo dado es un
     múltiplo de 3 o un múltiplo de 7
+*/
+ function multiplo(num){
+   num=Math.abs(num);
+   if (num % 3 ===0 && num % 7 === 0) {
+     console.log(`${num} es multiplo de 3 y 7 `)
+   }
+   else if(num % 3 === 0){
+    console.log(`${num} es multiplo de 3`);
+   }else if(num % 7 === 0){
+     console.log(`${num} es multiplo de 7`);
+   }
+   else{
+     console.log(`${num}no es multiplo de 3 o 7`);
+   }
+ }
 
+ multiplo(21);
+/*
   -- Roberto
   8. Escriba un programa JavaScript para verificar si los valores enteros dados están en
     el rango 50-99 (inclusive). Devuelve verdadero si uno o más de ellos están en dicho
