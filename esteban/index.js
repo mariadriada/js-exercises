@@ -93,28 +93,39 @@ console.log("esteban/index/js");
   7. Escriba un programa JavaScript para verificar si un número positivo dado es un
     múltiplo de 3 o un múltiplo de 7
 */
- function multiplo(num){
-   num=Math.abs(num);
-   if (num % 3 ===0 && num % 7 === 0) {
-     console.log(`${num} es multiplo de 3 y 7 `)
-   }
-   else if(num % 3 === 0){
-    console.log(`${num} es multiplo de 3`);
-   }else if(num % 7 === 0){
-     console.log(`${num} es multiplo de 7`);
-   }
-   else{
-     console.log(`${num}no es multiplo de 3 o 7`);
-   }
- }
+//  function multiplo(num){
+//    num=Math.abs(num);
+//    if (num % 3 ===0 && num % 7 === 0) {
+//      console.log(`${num} es multiplo de 3 y 7 `)
+//    }
+//    else if(num % 3 === 0){
+//     console.log(`${num} es multiplo de 3`);
+//    }else if(num % 7 === 0){
+//      console.log(`${num} es multiplo de 7`);
+//    }
+//    else{
+//      console.log(`${num}no es multiplo de 3 o 7`);
+//    }
+//  }
 
- multiplo(21);
+//  multiplo(21);
 /*
   -- Roberto
   8. Escriba un programa JavaScript para verificar si los valores enteros dados están en
     el rango 50-99 (inclusive). Devuelve verdadero si uno o más de ellos están en dicho
     rango
+*/
 
+  function rango(arr){
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i]>=50 && arr[i]<=99) {
+        console.log(true);
+      }
+    }
+  }
+
+  rango([70,20,90,50])
+/*
   -- Cristian
   9. Escribe un programa JavaScript que dado un número (Que representa grados) diga
     qué tipo de ángulo es.
