@@ -135,19 +135,19 @@ console.log("esteban/index/js");
     ○ Ángulo obtuso: ángulo entre 90 y 180 grados.
     ○ Ángulo recto: un ángulo de 180 grados.
 */
-function grados(angulo){
-  if (angulo > 0 && angulo < 90) {
-    console.log(`${angulo} es agudo`);
-  }else if (angulo === 90) {
-    console.log(`${angulo} es recto`);
-  }else if (angulo > 90 && angulo < 180) {
-    console.log(`${angulo} es obtuso`);
-  }else if(angulo === 180){
-    console.log(`${angulo} es llano`);
-  }
-}
+// function grados(angulo){
+//   if (angulo > 0 && angulo < 90) {
+//     console.log(`${angulo} es agudo`);
+//   }else if (angulo === 90) {
+//     console.log(`${angulo} es recto`);
+//   }else if (angulo > 90 && angulo < 180) {
+//     console.log(`${angulo} es obtuso`);
+//   }else if(angulo === 180){
+//     console.log(`${angulo} es llano`);
+//   }
+// }
 
-grados(180);
+// grados(180);
 /*
   
   -- Emily
@@ -229,6 +229,13 @@ grados(180);
   14. Escriba un programa JavaScript para convertir un número determinado en horas.
     Por ejemplo: 120 serían 2 horas
 
+    */
+  function convertHour(number){
+      let hour=number/60;
+      console.log(`son ${hour} horas`);
+  }
+  convertHour(10000);
+    /*
   -- Sebastian
   15. Escriba un programa JavaScript para comprobar si aparece el número 1 en la
     primera o última posición de un arreglo dado de números enteros. La longitud del
