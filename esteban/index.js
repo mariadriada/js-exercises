@@ -230,17 +230,30 @@ console.log("esteban/index/js");
     Por ejemplo: 120 serían 2 horas
 
     */
-  function convertHour(number){
-      let hour=number/60;
-      console.log(`son ${hour} horas`);
-  }
-  convertHour(10000);
+  // function convertHour(number){
+  //     let hour=number/60;
+  //     console.log(`son ${hour} horas`);
+  // }
+  // convertHour(10000);
     /*
+
   -- Sebastian
   15. Escriba un programa JavaScript para comprobar si aparece el número 1 en la
     primera o última posición de un arreglo dado de números enteros. La longitud del
     arreglo debe ser mayor o igual a 1
+*/
 
+  function numeroUno(array){
+      //let ultimo=array.length-1;
+      if (array[0] === 1) {
+        console.log("hay un 1 en la primera posicion");
+      } else if (array[array.length-1] === 1) {
+        console.log("hay un 1 en la ultima posicion");
+      }
+  }
+
+  numeroUno([1,2,3,1]);
+/*
   -- Juan Manuel
   16. Escriba un programa que calcule el promedio de los números de un arreglo
 
