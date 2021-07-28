@@ -116,15 +116,15 @@ console.log("esteban/index/js");
     rango
 */
 
-  function rango(arr){
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i]>=50 && arr[i]<=99) {
-        console.log(true);
-      }
-    }
-  }
+  // function rango(arr){
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i]>=50 && arr[i]<=99) {
+  //       console.log(true);
+  //     }
+  //   }
+  // }
 
-  rango([70,20,90,50])
+  // rango([70,20,90,50])
 /*
   -- Cristian
   9. Escribe un programa JavaScript que dado un número (Que representa grados) diga
@@ -134,7 +134,21 @@ console.log("esteban/index/js");
     ○ Ángulo recto: un ángulo de 90 grados.
     ○ Ángulo obtuso: ángulo entre 90 y 180 grados.
     ○ Ángulo recto: un ángulo de 180 grados.
+*/
+function grados(angulo){
+  if (angulo > 0 && angulo < 90) {
+    console.log(`${angulo} es agudo`);
+  }else if (angulo === 90) {
+    console.log(`${angulo} es recto`);
+  }else if (angulo > 90 && angulo < 180) {
+    console.log(`${angulo} es obtuso`);
+  }else if(angulo === 180){
+    console.log(`${angulo} es llano`);
+  }
+}
 
+grados(180);
+/*
   
   -- Emily
   10. Escriba un programa JavaScript para encontrar el mayor de tres enteros dados
