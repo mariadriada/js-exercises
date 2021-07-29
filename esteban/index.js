@@ -243,20 +243,31 @@ console.log("esteban/index/js");
     arreglo debe ser mayor o igual a 1
 */
 
-  function numeroUno(array){
-      //let ultimo=array.length-1;
-      if (array[0] === 1) {
-        console.log("hay un 1 en la primera posicion");
-      } else if (array[array.length-1] === 1) {
-        console.log("hay un 1 en la ultima posicion");
-      }
-  }
+  // function numeroUno(array){
+  //     //let ultimo=array.length-1;
+  //     if (array[0] === 1) {
+  //       console.log("hay un 1 en la primera posicion");
+  //     } else if (array[array.length-1] === 1) {
+  //       console.log("hay un 1 en la ultima posicion");
+  //     }
+  // }
 
-  numeroUno([1,2,3,1]);
+  // numeroUno([1,2,3,1]);
 /*
   -- Juan Manuel
   16. Escriba un programa que calcule el promedio de los números de un arreglo
-
+*/
+  let sum=0;
+  let prom=0;
+  function promeArray(array){
+    for (let index = 0; index < array.length; index++) {
+      sum += array[index];
+    }
+    prom=sum/array.length;
+    console.log(prom);
+  }
+  promeArray([10,60,20,10]);
+/*
   -- Roberto
   17. Escriba un programa JavaScript para intercambiar el primer y último elemento de un
     arreglo dado de enteros.
