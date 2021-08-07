@@ -257,21 +257,33 @@ console.log("esteban/index/js");
   -- Juan Manuel
   16. Escriba un programa que calcule el promedio de los números de un arreglo
 */
-  let sum=0;
-  let prom=0;
-  function promeArray(array){
-    for (let index = 0; index < array.length; index++) {
-      sum += array[index];
-    }
-    prom=sum/array.length;
-    console.log(prom);
-  }
-  promeArray([10,60,20,10]);
+  // let sum=0;
+  // let prom=0;
+  // function promeArray(array){
+  //   for (let index = 0; index < array.length; index++) {
+  //     sum += array[index];
+  //   }
+  //   prom=sum/array.length;
+  //   console.log(prom);
+  // }
+  // promeArray([10,60,20,10]);
 /*
   -- Roberto
   17. Escriba un programa JavaScript para intercambiar el primer y último elemento de un
     arreglo dado de enteros.
+*/
+let primero=[];
+let ultimo=[];
+function arreglo(arr){
+ primero=arr[0];
+ ultimo=arr[arr.length-1];
+ arr.splice(0, 1, ultimo );
+ arr.splice(arr.length-1, 1, primero);
+ console.log(arr)
+}
 
+arreglo([3, 2, 4, 15, 70]);
+/*
   -- Cristian
   19. Escriba un JavaScript para encontrar el String más largo de un arreglo de Strings.
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.
