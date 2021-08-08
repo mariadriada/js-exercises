@@ -272,20 +272,29 @@ console.log("esteban/index/js");
   17. Escriba un programa JavaScript para intercambiar el primer y último elemento de un
     arreglo dado de enteros.
 */
-let primero=[];
-let ultimo=[];
-function arreglo(arr){
- primero=arr[0];
- ultimo=arr[arr.length-1];
- arr.splice(0, 1, ultimo );
- arr.splice(arr.length-1, 1, primero);
- console.log(arr)
-}
 
-arreglo([3, 2, 4, 15, 70]);
+// function arreglo(arr){
+//  primero=arr[0];
+//  ultimo=arr[arr.length-1];
+//  arr.splice(0, 1, ultimo );
+//  arr.splice(arr.length-1, 1, primero);
+//  console.log(arr)
+// }
+
+// arreglo([3, 2, 4, 15, 70]);
 /*
   -- Cristian
   19. Escriba un JavaScript para encontrar el String más largo de un arreglo de Strings.
     Ejemplo: [“a”,”bc”,”def”] Debería imprimir “def” por ser el que más caracteres tiene.
  * 
  */
+
+function strLarge(arre){
+  let str="";
+  for (let i = 0; i < arre.length; i++) {
+    if(arre[i].length > str.length)
+    str=arre[i];
+  }
+  console.log(str);
+}
+strLarge(["abc", "abcd", "abcde", "a", "ab"]);
